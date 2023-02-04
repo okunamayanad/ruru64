@@ -23,7 +23,9 @@ body {
 footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   height: 5vh;
   background-color: #1f1f1f;
   display: flex;
@@ -64,7 +66,9 @@ a:hover {
 }
 
 nav {
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   height: 5vh;
   background-color: #1f1f1f;
   display: flex;
@@ -74,4 +78,32 @@ nav {
   z-index: 1;
   border-bottom: 5px solid #ff7d7d;
   border-radius: 0px 0px 20px 20px;
+}
+#input {
+  background-color: #1f1f1f;
+  color: white;
+  border: 0px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  margin: 1rem;
+  border: 2px solid #ff7d7d;
+  border-radius: 10000px;
+  transition: 0.2s ease;
+}
+#output {
+  word-break: break-all;
+  min-height: 28px;
+  min-width: 50px;
+  max-width: 80%;
+  background-color: #1f1f1f;
+  color: white;
+  border: 0px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  margin: 1rem;
+  border: 2px solid #ff7d7d;
+  border-radius: 28px;
+  transition: 0.2s ease;
 }
