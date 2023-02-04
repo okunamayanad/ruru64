@@ -7,8 +7,8 @@ inputText.addEventListener('input', function () {
 
     let input = inputText.value.split('')
     input.forEach(letter => {
-        if (!eval('alphabet.' + letter)) return console.log('Alfabe dosyasında ' + letter + ' harfi bulunamadı. Bunu decodelaman senin için sorun yaratabilir.')
-        eval('result += alphabet.' + letter + ' || letter')
+        if (!!!alphabet[letter]) return console.log('Alfabe dosyasında ' + letter + ' harfi bulunamadı. Bunu decodelaman senin için sorun yaratabilir.')
+        result += alphabet[letter] || letter
     })
 
     document.getElementById("output").innerHTML = result

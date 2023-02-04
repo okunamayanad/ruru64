@@ -16,11 +16,11 @@ input.addEventListener('input', function () {
     console.log(input.value);
     const inputArray = input.value.match(/.{1,2}/g);
     inputArray.forEach(chunk => {
-        if (!eval(`alphabet.${chunk}`)) {
+        if (!!!alphabet[chunk]) {
             document.getElementById("output").innerHTML = `Couldn't find a value for this chunk: "${chunk}"`
             return;
         }
-        eval(`result += alphabet.${chunk} || '${chunk}'`)
+        result += alphabet[chunk] || chunk
     });
     document.getElementById("output").innerHTML = result
     console.log("result: " + result);
