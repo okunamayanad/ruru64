@@ -11,7 +11,8 @@ body {
   color: white;
 }
 .content {
-  padding: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
   text-align: center;
   height: 100%;
   display: flex;
