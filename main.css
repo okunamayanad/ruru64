@@ -80,6 +80,8 @@ nav {
   border-radius: 0px 0px 20px 20px;
 }
 #input {
+  min-width: 50px;
+  max-width: 80%;
   background-color: #1f1f1f;
   color: white;
   border: 0px;
