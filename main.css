@@ -108,3 +108,14 @@ nav {
   border-radius: 28px;
   transition: 0.2s ease;
 }
+
+.swup-transition-move {
+  transition: 0.4s;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+html.is-animating .swup-transition-move {
+  opacity: 0;
+  transform: translateY(20px);
+}
