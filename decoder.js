@@ -11,7 +11,7 @@ function swap(json) {
 alphabet = swap(alphabet)
 
 input.addEventListener('input', function () {
-    if (!input.value) return document.getElementById("output").innerHTML = "Please ."
+    if (!input.value) return document.getElementById("output").innerHTML = "Please enter a value."
     let result = ''
     console.log(input.value);
     const inputArray = input.value.match(/.{1,2}/g);
