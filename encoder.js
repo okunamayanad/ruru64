@@ -1,8 +1,8 @@
 var inputText = document.getElementById('input');
-document.getElementById("output").innerHTML = "Lütfen bir metin girin."
+document.getElementById("output").innerHTML = "Please enter a value."
 
 inputText.addEventListener('input', function () {
-    if (!inputText.value) return document.getElementById("output").innerHTML = "Lütfen bir metin girin."
+    if (!inputText.value) return document.getElementById("output").innerHTML = "Please enter a value."
     let result = ''
 
     let input = inputText.value.split('')
