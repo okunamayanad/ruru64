@@ -84,7 +84,6 @@ nav {
   max-width: 80%;
   background-color: #1f1f1f;
   color: white;
-  border: 0px;
   font-size: 1.5rem;
   font-weight: 700;
   padding: 0.5rem;
@@ -108,4 +107,15 @@ nav {
   border: 2px solid #ff7d7d;
   border-radius: 28px;
   transition: 0.2s ease;
+}
+
+.swup-transition-move {
+  transition: 0.4s;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+html.is-animating .swup-transition-move {
+  opacity: 0;
+  transform: translateY(20px);
 }
