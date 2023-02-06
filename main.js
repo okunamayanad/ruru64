@@ -19,26 +19,17 @@ function init() {
     if (decodeInput) {
         document.getElementById("output").innerHTML = "Please enter a value."
 
-        function swap(json) {
-            var ret = {};
-            for (var key in json) {
-                ret[json[key]] = key;
-            }
-            return ret;
-        }
-        alphabet = swap(alphabet)
-
         decodeInput.addEventListener('input', function () {
             if (!decodeInput.value) return document.getElementById("output").innerHTML = "Please enter a value."
             let result = ''
             console.log(decodeInput.value);
             const inputArray = decodeInput.value.match(/.{1,2}/g);
             inputArray.forEach(chunk => {
-                if (!!!alphabet[chunk]) {
+                if (!!!swappedAlphabet[chunk]) {
                     document.getElementById("output").innerHTML = `Couldn't find a value for this chunk: "${chunk}"`
                     return;
                 }
-                result += alphabet[chunk] || chunk
+                result += swappedAlphabet[chunk] || chunk
             });
             document.getElementById("output").innerHTML = result
             console.log("result: " + result);
