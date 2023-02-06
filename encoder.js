@@ -1,4 +1,10 @@
+
 var inputText = document.getElementById('input');
+
+function init() {
+    var inputText = document.getElementById('input');
+}
+
 document.getElementById("output").innerHTML = "Please enter a value."
 
 inputText.addEventListener('input', function () {
