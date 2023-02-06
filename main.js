@@ -11,6 +11,7 @@ if (document.readyState === 'complete') {
 swup.on('contentReplaced', init);
 
 function init() {
+    console.log('init called');
     var encodeInput = document.getElementById('inputEncode');
     var decodeInput = document.getElementById('inputDecode');
     if (decodeInput) {
