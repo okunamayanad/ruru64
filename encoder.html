@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,12 +18,13 @@
     <div class="content swup-transition-move" id="swup">
       <input
         type="text"
-        id="inputEncode"
-        name="inputEncode"
+        id="input"
+        name="input"
         value=""
         placeholder="Enter a value to encrypt"
       />
       <p id="output"></p>
+      <script src="encoder.js"></script>
     </div>
     <footer>
       <p>
@@ -31,6 +32,10 @@
         <a href="https://discord.gg/merururuu">Discord</a>!
       </p>
     </footer>
-    <script src="main.js"></script>
+    <script>
+      var swup = new Swup({
+        animationSelector: '[class*="swup-transition-"]',
+      });
+    </script>
   </body>
 </html>
