@@ -15,6 +15,7 @@ function init() {
     console.log('init called');
     var encodeInput = document.getElementById('inputEncode');
     var decodeInput = document.getElementById('inputDecode');
+    resetAlphabet()
     if (decodeInput) {
         document.getElementById("output").innerHTML = "Please enter a value."
 
@@ -43,8 +44,6 @@ function init() {
             console.log("result: " + result);
         });
     } else if (encodeInput) {
-
-
         document.getElementById("output").innerHTML = "Please enter a value."
 
         encodeInput.addEventListener('input', function () {
