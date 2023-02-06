@@ -11,8 +11,8 @@ if (document.readyState === 'complete') {
 swup.on('contentReplaced', init);
 
 function init() {
-    var inputText = document.getElementById('input');
-    var decodeInput = document.getElementById('input');
+    var encodeInput = document.getElementById('inputEncode');
+    var decodeInput = document.getElementById('inputDecode');
     if (decodeInput) {
         document.getElementById("output").innerHTML = "Please enter a value."
 
