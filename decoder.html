@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://unpkg.com/swup@3"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="alphabet.js"></script>
   </head>
   <body>
     <nav>
@@ -15,11 +14,11 @@
       <div class="nav-item"><a href="decoder">Decoder</a></div>
       <div class="nav-item"><a href="encoder">Encoder</a></div>
     </nav>
-    <div class="content swup-transition-move" id="swup">  
+    <div class="content swup-transition-move" id="swup">
       <input
         type="text"
-        id="input"
-        name="input"
+        id="inputDecode"
+        name="inputDecode"
         value=""
         placeholder="Enter the encrypted code"
       />
@@ -32,10 +31,6 @@
         <a href="https://discord.gg/merururuu">Discord</a>!
       </p>
     </footer>
-    <script>
-      var swup = new Swup({
-        animationSelector: '[class*="swup-transition-"]',
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
