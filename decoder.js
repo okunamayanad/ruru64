@@ -1,5 +1,15 @@
 var input = document.getElementById('input');
 
+// run once when page loads
+if (document.readyState === 'complete') {
+    init();
+} else {
+    document.addEventListener('DOMContentLoaded', () => init());
+}
+
+// run after every additional navigation by swup
+swup.on('contentReplaced', init);
+
 function init() {
     var inputText = document.getElementById('input');
 }
