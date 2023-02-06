@@ -1,4 +1,5 @@
-var input = document.getElementById('input');
+var encodeInput = document.getElementById('inputEncode');
+var decodeInput = document.getElementById('inputDecode');
 
 // run once when page loads
 if (document.readyState === 'complete') {
@@ -26,11 +27,11 @@ function init() {
         }
         alphabet = swap(alphabet)
 
-        input.addEventListener('input', function () {
-            if (!input.value) return document.getElementById("output").innerHTML = "Please enter a value."
+        decodeInput.addEventListener('input', function () {
+            if (!decodeInput.value) return document.getElementById("output").innerHTML = "Please enter a value."
             let result = ''
-            console.log(input.value);
-            const inputArray = input.value.match(/.{1,2}/g);
+            console.log(decodeInput.value);
+            const inputArray = decodeInput.value.match(/.{1,2}/g);
             inputArray.forEach(chunk => {
                 if (!!!alphabet[chunk]) {
                     document.getElementById("output").innerHTML = `Couldn't find a value for this chunk: "${chunk}"`
@@ -46,11 +47,11 @@ function init() {
 
         document.getElementById("output").innerHTML = "Please enter a value."
 
-        inputText.addEventListener('input', function () {
-            if (!inputText.value) return document.getElementById("output").innerHTML = "Please enter a value."
+        encodeInput.addEventListener('input', function () {
+            if (!encodeInput.value) return document.getElementById("output").innerHTML = "Please enter a value."
             let result = ''
 
-            let input = inputText.value.split('')
+            let input = encodeInput.value.split('')
             input.forEach(letter => {
                 if (!!!alphabet[letter]) return console.log('Alfabe dosyasında ' + letter + ' harfi bulunamadı. Bunu decodelaman senin için sorun yaratabilir.')
                 result += alphabet[letter] || letter
