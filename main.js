@@ -1,7 +1,7 @@
 const swup = new Swup();
 
-
 if (document.readyState === 'complete') {
+    console.log("readyState");
     init();
 } else {
     document.addEventListener('DOMContentLoaded', () => init());
@@ -10,6 +10,7 @@ if (document.readyState === 'complete') {
 swup.on('contentReplaced', init);
 
 function init() {
+    console.log("init");
     var input = document.getElementById('inputDecode');
     document.getElementById("output").innerHTML = "Please enter a value."
 
