@@ -15,7 +15,6 @@ function init() {
     console.log('init called');
     var encodeInput = document.getElementById('inputEncode');
     var decodeInput = document.getElementById('inputDecode');
-    resetAlphabet()
     if (decodeInput) {
         document.getElementById("output").innerHTML = "Please enter a value."
 
